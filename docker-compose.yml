@@ -20,7 +20,7 @@ services:
       - bootstrap.memory_lock=true
       - discovery.type=single-node
       - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
-     # - ELASTIC_PASSWORD= XXXXXXX
+      - ELASTIC_PASSWORD=b9EpuvIlG0LRMz9k9M8p
       - xpack.security.enabled=true
     ulimits:
       memlock:
@@ -40,7 +40,7 @@ services:
       - ELASTICSEARCH_URL=http://elasticsearch:9200
       - XPACK_SECURITY_ENABLED=true
       - ELASTICSEARCH_USERNAME=elastic
-     # - ELASTICSEARCH_PASSWORD=XXXXXX
+      - ELASTICSEARCH_PASSWORD=zEZ2JgNWOKq0T6TirNUG
     ports: ['5601:5601']
     networks: ['stack']
     links: ['elasticsearch']
