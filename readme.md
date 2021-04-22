@@ -22,4 +22,7 @@ here put login id: "elastic" and password: password for user elastic.
 9)browse > ip:5601 (kibana login page will open)
 username : "elastic" and password: (password for user elastic)
 
- 
+
+
+
+Followed Document: https://medium.com/@mandeep_m91/setting-up-elasticsearch-and-kibana-on-docker-with-x-pack-security-enabled-6875b63902e6
