@@ -39,11 +39,11 @@ services:
       - SERVER_HOST="0"
       - ELASTICSEARCH_URL=http://elasticsearch:9200
       - XPACK_SECURITY_ENABLED=true
-      - ELASTICSEARCH_USERNAME=elastic
-    #  - ELASTICSEARCH_PASSWORD=zEZ2JgNWOKq0T6TirNUG
+      - ELASTICSEARCH_USERNAME=kibana
+      - ELASTICSEARCH_PASSWORD=zEZ2JgNWOKq0T6TirNUG
     ports: ['5601:5601']
     networks: ['stack']
-   # links: ['elasticsearch']
+    links: ['elasticsearch']
     depends_on: ['elasticsearch']
 
 networks:
